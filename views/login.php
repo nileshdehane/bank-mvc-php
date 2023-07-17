@@ -307,7 +307,7 @@
 
                     <div class="register">
 
-                        <p>Don't have an account? <a href="#">Sign Up</a></p>
+                        <p>Don't have an account? <a href="">Sign Up</a></p>
 
                     </div>
 

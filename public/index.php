@@ -27,7 +27,7 @@ if (file_exists($controllerFilePath)) {
 
 
     // Create the controller class name
-    $controllerClassName = ucfirst($controller) . 'Controller';
+    $controllerClassName = ucfirst($controller).'Controller';
 
     // Check if the controller class exists
     if (class_exists($controllerClassName)) {

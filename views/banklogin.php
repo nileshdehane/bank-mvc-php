@@ -151,10 +151,7 @@ body {
 <div class="right-container">
     <form method="POST">
     <div class="right-container__box">
-        <div class="right-container-box">
-            <h2 class="right-container__h2">Nice to see you!</h2>
-            <p class="right-container__p">Enter your email and password to sign in</p>
-        </div>
+        
         <div class="input-container">
             <label for="email" class="right-container__label">Username</label>
             <input type="text" class="right-container__input" name="username" placeholder="Your username">
@@ -166,7 +163,7 @@ body {
           <label for="checkbox">Remember me</label>
         </div>
         <button class="btn">SIGN IN</button>
-      <p class="right-container__bottom-text">Don't have an account? <strong>Sign Up</strong></p>
+       <p class="right-container__bottom-text">Don't have an account? <strong>Sign Up</strong></p>
     </div>
 </form>
 </div>

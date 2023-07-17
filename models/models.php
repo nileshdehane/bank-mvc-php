@@ -33,12 +33,16 @@ class Model {
             $check_user = "SELECT * FROM users WHERE username='$username'";
             $run = mysqli_query($dbcon, $check_user);
 
-            if ($username == "G" && $password == "E") {
+            if ($username == "G" && $password == "E")
+            {
                 header("Location: /Views/Dashboard.php");
-            } else if (mysqli_num_rows($run)) {
+            } 
+            else if (mysqli_num_rows($run))
+            {
                 $row = mysqli_fetch_assoc($run);
                 $hashedPassword = $row['password'];
-                if (password_verify($password, $hashedPassword)) {
+                if (password_verify($password, $hashedPassword))
+                {
                     $accessToken = $this->generateAccessToken();
                     $_SESSION['ACCESS_TOKEN'] = $accessToken;
 
@@ -47,12 +51,16 @@ class Model {
                     mysqli_query($dbcon, $update_query);
 
                     return 'login';
-                } else {
-                    echo "<script>alert('Incorrect password!')</script>";
                 }
-            } else {
-                echo "<script>alert('Username not found!')</script>";
-            }
+                else
+               {
+                   echo "<script>alert('Incorrect password!')</script>";
+                }
+            } 
+               else 
+                {
+                    echo "<script>alert('Username not found!')</script>";
+                }
         }
     }
 }
